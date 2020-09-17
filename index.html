@@ -23,7 +23,6 @@
             .container{
               display: block;
               position: absolute;
-              padding: 100px;
               width: calc(100% - 40px);
               max-width: 450px;
               text-align: center;
@@ -32,6 +31,7 @@
               -webkit-transform: translate(-50%, -50%);
               -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
+              overflow: hidden;
             }
             .desc_bloc{
               background: #f1f1f1;
@@ -60,6 +60,14 @@
               position: relative;
               top: 10px;
               max-width: 56px;
+            }
+            @media screen and (max-width: 640px) {
+              .desc_bloc {
+                  padding: 30px 50px;
+              }
+              p{
+                font-size: 14px;
+              }
             }
         </style>
     </head>
